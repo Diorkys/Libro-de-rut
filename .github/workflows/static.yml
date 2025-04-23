@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuestionario de Rut 1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefaf6;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e26d2f;
+    }
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .pregunta {
+      background-color: #fdf0e6;
+      border-left: 5px solid #e26d2f;
+      margin-bottom: 25px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .pregunta strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      margin: 5px 5px 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      padding-left: 5px;
+    }
+    button {
+      background-color: #e26d2f;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 auto;
+      display: block;
+    }
+    button:hover {
+      background-color: #d55c1f;
+    }
+    #resultado {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .correcta {
+      color: green;
+    }
+    .incorrecta {
+      color: red;
+    }
+    .respuesta-correcta {
+      margin-top: 8px;
+      font-style: italic;
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>📖 Cuestionario de Rut capítulo 1</h1>
+
+  <form id="quizForm">
+
+    <!-- PREGUNTAS -->
+    <div class="pregunta">
+      <strong>1. Completa el versículo: Donde tú __________ iré yo, y donde quiera que tú __________ viviré.</strong><br>
+      <input type="text" name="comp1" placeholder="1ª palabra">
+      <input type="text" name="comp2" placeholder="2ª palabra">
+    </div>
+
+    <div class="pregunta">
+      <strong>2. Tu __________ será mi pueblo, y tu __________ será mi Dios.</strong><br>
+      <input type="text" name="comp3" placeholder="1ª palabra">
+      <input type="text" name="comp4" placeholder="2ª palabra">
+    </div>
+
+    <div class="pregunta">
+      <strong>3. Donde tú murieres, moriré yo, y allí seré __________.</strong><br>
+      <input type="text" name="comp5">
+    </div>
+
+    <div class="pregunta">
+      <strong>4. ¿Quién es el intruso? (Personaje que NO aparece en Rut 1)</strong><br>
+      <label><input type="radio" name="intruso1" value="a"> Elimelec</label><br>
+      <label><input type="radio" name="intruso1" value="b"> Booz</label><br>
+      <label><input type="radio" name="intruso1" value="c"> Orfa</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>5. ¿Cuál de estas ciudades no es mencionada en Rut 1?</strong><br>
+      <label><input type="radio" name="intruso2" value="a"> Belén</label><br>
+      <label><input type="radio" name="intruso2" value="b"> Moab</label><br>
+      <label><input type="radio" name="intruso2" value="c"> Jericó</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>6. ¿Cuál de estos nombres no es el verdadero nombre de un personaje en Rut 1?</strong><br>
+      <label><input type="radio" name="intruso3" value="a"> Orfa</label><br>
+      <label><input type="radio" name="intruso3" value="b"> Noemí</label><br>
+      <label><input type="radio" name="intruso3" value="c"> Mara</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>7. ¿Por qué Noemí se cambió el nombre a Mara?</strong><br>
+      <label><input type="radio" name="empuje1" value="a"> Porque había cambiado de ciudad</label><br>
+      <label><input type="radio" name="empuje1" value="b"> Porque había perdido su casa</label><br>
+      <label><input type="radio" name="empuje1" value="c"> Porque Dios la había afligido</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>8. ¿Por qué Elimelec y su familia salieron de Belén?</strong><br>
+      <label><input type="radio" name="empuje2" value="a"> Por persecución</label><br>
+      <label><input type="radio" name="empuje2" value="b"> Por hambre en Belén</label><br>
+      <label><input type="radio" name="empuje2" value="c"> Por mandato de Dios</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>9. ¿Qué hizo Orfa finalmente cuando Noemí insistió?</strong><br>
+      <label><input type="radio" name="empuje3" value="a"> Lloró y se fue</label><br>
+      <label><input type="radio" name="empuje3" value="b"> Lloró y se quedó</label><br>
+      <label><input type="radio" name="empuje3" value="c"> No dijo nada</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>10. Rut era israelita. (V/F)</strong><br>
+      <label><input type="radio" name="vf1" value="v"> Verdadero</label><br>
+      <label><input type="radio" name="vf1" value="f"> Falso</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>11. Noemí era suegra de Rut. (V/F)</strong><br>
+      <label><input type="radio" name="vf2" value="v"> Verdadero</label><br>
+      <label><input type="radio" name="vf2" value="f"> Falso</label>
+    </div>
+
+    <div class="pregunta">
+      <strong>12. Noemí tuvo 3 hijas. (V/F)</strong><br>
+      <label><input type="radio" name="vf3" value="v"> Verdadero</label><br>
+      <label><input type="radio" name="vf3" value="f"> Falso</label>
+    </div>
+
+    <button type="button" onclick="calcular()">Enviar respuestas</button>
+  </form>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+    function calcular() {
+      let puntos = 0;
+      const respuestas = [
+        { tipo: "texto", nombres: ["comp1", "comp2"], correctas: ["fueres", "vivieres"] },
+        { tipo: "texto", nombres: ["comp3", "comp4"], correctas: ["pueblo", "dios"] },
+        { tipo: "texto", nombres: ["comp5"], correctas: ["sepultada"] },
+        { tipo: "radio", nombre: "intruso1", correcta: "b", texto: "b) Booz" },
+        { tipo: "radio", nombre: "intruso2", correcta: "c", texto: "c) Jericó" },
+        { tipo: "radio", nombre: "intruso3", correcta: "c", texto: "c) Mara" },
+        { tipo: "radio", nombre: "empuje1", correcta: "c", texto: "c) Porque Dios la había afligido" },
+        { tipo: "radio", nombre: "empuje2", correcta: "b", texto: "b) Por hambre en Belén" },
+        { tipo: "radio", nombre: "empuje3", correcta: "a", texto: "a) Lloró y se fue" },
+        { tipo: "radio", nombre: "vf1", correcta: "f", texto: "Falso" },
+        { tipo: "radio", nombre: "vf2", correcta: "v", texto: "Verdadero" },
+        { tipo: "radio", nombre: "vf3", correcta: "f", texto: "Falso" }
+      ];
+
+      const preguntas = document.querySelectorAll(".pregunta");
+      document.querySelectorAll('.respuesta-correcta').forEach(el => el.remove());
+
+      respuestas.forEach((resp, i) => {
+        const preguntaDiv = preguntas[i];
+
+        if (resp.tipo === "texto") {
+          resp.nombres.forEach((nombre, idx) => {
+            const input = document.querySelector(`input[name="${nombre}"]`);
+            if (input && input.value.trim().toLowerCase() === resp.correctas[idx]) {
+              puntos += 2;
+              input.classList.add("correcta");
+              input.classList.remove("incorrecta");
+            } else {
+              input.classList.add("incorrecta");
+              input.classList.remove("correcta");
+            }
+          });
+        } else if (resp.tipo === "radio") {
+          const seleccion = document.querySelector(`input[name="${resp.nombre}"]:checked`);
+          if (seleccion && seleccion.value === resp.correcta) {
+            puntos += 2;
+            seleccion.parentElement.classList.add("correcta");
+          } else if (seleccion) {
+            seleccion.parentElement.classList.add("incorrecta");
+          }
+        }
+      });
+
+      document.getElementById("resultado").innerText = "Puntuación total: " + puntos + " / 24";
+
+      if (puntos >= 20) {
+        // Mostrar respuestas correctas
+        respuestas.forEach((resp, i) => {
+          const preguntaDiv = preguntas[i];
+          const div = document.createElement("div");
+          div.className = "respuesta-correcta";
+          div.innerText = "✅ Respuesta correcta: " + (resp.texto || resp.correctas.join(" / "));
+          preguntaDiv.appendChild(div);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
